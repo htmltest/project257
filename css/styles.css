@@ -1,0 +1,189 @@
+@font-face {font-family:Hotpoint; font-weight:300; font-style:normal; font-display:swap; src:url("fonts/Hotpoint/Hotpoint-Light.ttf") format("truetype")}
+@font-face {font-family:Hotpoint; font-weight:400; font-style:normal; font-display:swap; src:url("fonts/Hotpoint/Hotpoint-Regular.ttf") format("truetype")}
+@font-face {font-family:Hotpoint; font-weight:500; font-style:normal; font-display:swap; src:url("fonts/Hotpoint/Hotpoint-Medium.ttf") format("truetype")}
+@font-face {font-family:Hotpoint; font-weight:700; font-style:normal; font-display:swap; src:url("fonts/Hotpoint/Hotpoint-Bold.ttf") format("truetype")}
+
+.land-april25-wrapper,
+.land-april25-wrapper *,
+.land-april25-wrapper *::before,
+.land-april25-wrapper *::after {outline:none; box-sizing:border-box; font-family:Hotpoint, sans-serif; letter-spacing:0}
+
+.land-april25-wrapper {background:#EBEBEB; position:relative; overflow:hidden; width:100%; padding-bottom:195px}
+
+@media screen and (max-width:1167px) {
+    .land-april25-wrapper {padding-bottom:80px}
+}
+
+.land-april25-container {margin:0 auto; max-width:1168px; width:100%; position:relative}
+
+@media screen and (max-width:1167px) {
+    .land-april25-container {padding:0 10px}
+}
+
+.land-april25-welcome {display:block; position:relative; padding:56px 0 0 0; height:300px; background:url(../img/land-april25-welcome.jpg) no-repeat center; background-size:cover}
+.land-april25-welcome-title img {display:block; width:424px; margin:0 0 0 -4px; transition:opacity 0.2s}
+@media screen and (min-width:1168px) {
+    .land-april25-welcome:hover .land-april25-welcome-title img {opacity:0.8}
+}
+.land-april25-welcome-title-mobile {display:none}
+
+@media screen and (max-width:1167px) {
+    .land-april25-welcome {padding:32px 0 0 0; height:480px; background:url(../img/land-april25-welcome-mobile.jpg) no-repeat center top; background-size:auto 100%}
+    .land-april25-welcome-title {display:none}
+    .land-april25-welcome-title-mobile {display:flex; justify-content:center}
+    .land-april25-welcome-title-mobile img {min-width:308px; max-width:308px}
+}
+
+.land-april25-lang {margin:40px 0 0 0; display:flex}
+.land-april25-lang a {margin:0 0 0 40px; position:relative; font-weight:500; font-size:18px; line-height:1.5em; color:rgba(0, 0, 0, 0.7); text-decoration:none; padding:0 0 5px 0}
+.land-april25-lang a:first-child {margin:0}
+.land-april25-lang a::after {content:""; position:absolute; left:0; bottom:0; right:0; height:1px; background:#C9C9C9; transition:height 0.2s, background 0.2s}
+@media screen and (min-width:1168px) {
+    .land-april25-lang a:hover::after {background:#C99B69}
+}
+.land-april25-lang a.active::after {height:3px; background:#C99B69}
+
+@media screen and (max-width:1167px) {
+    .land-april25-lang {margin:20px 0 0 0; justify-content:space-between}
+    .land-april25-lang a {margin:0; min-width:calc(50% - 5px); max-width:calc(50% - 5px); text-align:center; font-size:14px}
+}
+
+.land-april25-content {margin:40px 0 0 0; position:absolute; left:-9999px; top:-9999px; width:100%; opacity:0; transition:opacity 0.2s}
+.land-april25-content.active {position:relative; left:auto; top:auto; opacity:1}
+
+@media screen and (max-width:1167px) {
+    .land-april25-content {margin:60px 0 0 0}
+}
+
+.land-april25-block {margin:60px 0 0 0}
+.land-april25-block:first-child {margin:0}
+.land-april25-block-logo {display:flex; align-items:center; justify-content:center; height:60px; border-radius:6px}
+.land-april25-block-hotpoint .land-april25-block-logo {background:#000000}
+.land-april25-block-beko .land-april25-block-logo {background:#007CBA}
+.land-april25-block-indesit .land-april25-block-logo {background:#0091D0}
+.land-april25-block-grundig .land-april25-block-logo {background:#BB442A}
+.land-april25-block-materials {margin:16px -5px 0 -5px}
+.land-april25-block-materials .swiper-slide {min-width:33.33%; max-width:33.33%}
+.land-april25-block-material {display:block; margin:0 5px; background:#FFFFFF; border-radius:6px; padding:20px; text-decoration:none; transition:box-shadow 0.2s}
+@media screen and (min-width:1168px) {
+    .land-april25-block-materials .swiper {overflow:visible}
+    .land-april25-block-material:hover {box-shadow:0 0 10px rgba(0, 0, 0, 0.15)}
+}
+.land-april25-block-material-title {font-weight:bold; font-size:18px; line-height:1.3em; color:#353535; text-align:center}
+.land-april25-block-material-title span {font-size:14px}
+.land-april25-block-material-preview {margin:20px 0 0 0; position:relative}
+.land-april25-block-material-preview img {display:block; width:100%; border-radius:2px}
+.land-april25-block-material-preview svg {position:absolute; left:50%; top:50%; width:60px; height:60px; margin:-30px 0 0 -30px; fill:#FFFFFF}
+.land-april25-block-material-preview-mobile {display:none}
+.land-april25-block-material-btn {margin:20px 0 0 0; display:flex; height:45px; border-radius:4px; align-items:center; justify-content:center; color:#FFFFFF; font-weight:500; font-size:14px; line-height:1.2em; transition:opacity 0.2s}
+@media screen and (min-width:1168px) {
+    .land-april25-block-material:hover .land-april25-block-material-btn {opacity:0.8}
+}
+.land-april25-block-hotpoint .land-april25-block-material-btn {background:#000000}
+.land-april25-block-beko .land-april25-block-material-btn {background:#007CBA}
+.land-april25-block-indesit .land-april25-block-material-btn {background:#0091D0}
+.land-april25-block-grundig .land-april25-block-material-btn {background:#BB442A}
+.land-april25-block-materials .swiper-button-prev,
+.land-april25-block-materials .swiper-button-next,
+.land-april25-block-materials .swiper-pagination {display:none}
+.land-april25-block-materials .swiper-slide.land-april25-block-materials-slide-landing {display:none}
+.land-april25-block-info {display:flex; align-items:center; margin:16px 0 0 0; justify-content:center; font-weight:500; font-size:14px; line-height:1.3em; color:#636363}
+.land-april25-block-info svg {min-width:24px; max-width:24px; height:24px; fill:#636363; margin:0 5px 0 0}
+a.land-april25-block-landing,
+.land-april25-block-landing {display:flex; margin:30px 0 0 0; padding:0 60px; text-decoration:none; align-items:center; justify-content:space-between; text-align:center}
+.land-april25-block-landing-icons {display:flex; justify-content:center}
+.land-april25-block-landing-icon {display:flex; min-width:60px; max-width:60px; height:60px; border-radius:50%; align-items:center; justify-content:center; margin:0 0 0 10px}
+.land-april25-block-landing-icon:first-child {margin:0}
+.land-april25-block-hotpoint .land-april25-block-landing-icon {background:#000000}
+.land-april25-block-beko .land-april25-block-landing-icon {background:#007CBA}
+.land-april25-block-indesit .land-april25-block-landing-icon {background:#0091D0}
+.land-april25-block-grundig .land-april25-block-landing-icon {background:#BB442A}
+.land-april25-block-landing-title {margin:30px 0 0 0; font-weight:bold; font-size:30px; line-height:1.4em; color:#353535}
+.land-april25-block-landing-text {margin:10px 0 0 0; font-weight:500; font-size:18px; line-height:1.3em; color:#636363}
+.land-april25-block-landing-preview {min-width:567px; max-width:567px; background:#EBEBEB no-repeat; background-size:100% auto; padding:15px 5px 0 5px; border-radius:5px 5px 0 0}
+.land-april25-block-landing-preview img {display:block; width:100%; border-radius:5px 5px 0 0; transition:opacity 0.2s}
+@media screen and (min-width:1168px) {
+    a.land-april25-block-landing:hover .land-april25-block-landing-preview img {opacity:0.8}
+}
+a.land-april25-block-chatbot {margin:16px 0 0 0; display:flex; border:1px solid #DCDCDC; border-radius:8px; align-items:center; justify-content:center; height:56px; font-weight:bold; font-size:14px; line-height:1em; text-decoration:none; transition:border-color 0.2s}
+@media screen and (min-width:1168px) {
+    a.land-april25-block-chatbot:hover {border-color:#999999}
+}
+.land-april25-block-hotpoint .land-april25-block-chatbot {color:#000000}
+.land-april25-block-beko .land-april25-block-chatbot {color:#007CBA}
+.land-april25-block-indesit .land-april25-block-chatbot {color:#0091D0}
+.land-april25-block-grundig .land-april25-block-chatbot {color:#BB442A}
+.land-april25-block-chatbot-logo {min-width:36px; max-width:36px; height:36px; border-radius:50%; margin:0 10px 0 0; display:flex; align-items:center; justify-content:center; position:relative; overflow:hidden}
+.land-april25-block-hotpoint .land-april25-block-chatbot-logo {background:#000000}
+.land-april25-block-beko .land-april25-block-chatbot-logo {background:#007CBA}
+.land-april25-block-indesit .land-april25-block-chatbot-logo {background:#0091D0}
+.land-april25-block-grundig .land-april25-block-chatbot-logo {background:#BB442A}
+.land-april25-block-chatbot-logo img {display:block; width:100%; border-radius:50%}
+.land-april25-block-social {margin:16px 0 0 0; display:flex; align-items:center; justify-content:center; background:#DCDCDC; border-radius:6px; height:44px}
+.land-april25-block-social-title {font-weight:normal; font-size:14px; line-height:1.2em; color:#636363}
+.land-april25-block-social-title span {font-weight:bold}
+.land-april25-block-social-links {margin:0 0 0 22px; display:flex; align-items:center}
+.land-april25-block-social-links a {display:flex; align-items:center; justify-content:center; margin:0 0 0 10px; background:#FFFFFF; border-radius:50%; border:2px solid #DCDCDC; transition:background 0.2s}
+@media screen and (min-width:1168px) {
+    .land-april25-block-social-links a:hover {background:rgba(255, 255, 255, 0.7)}
+}
+.land-april25-block-social-links a:first-child {margin:0}
+.land-april25-block-social-links a svg {min-width:22px; max-width:22px; height:22px}
+.land-april25-block-hotpoint .land-april25-block-social-links a svg {fill:#000000}
+.land-april25-block-beko .land-april25-block-social-links a svg {fill:#007CBA}
+.land-april25-block-indesit .land-april25-block-social-links a svg {fill:#0091D0}
+.land-april25-block-grundig .land-april25-block-social-links a svg {fill:#BB442A}
+
+@media screen and (max-width:1167px) {
+    .land-april25-block-logo {border-radius:0; margin:0 -10px}
+    .land-april25-block-materials {margin:20px -10px 0 -10px; position:relative}
+    .land-april25-block-materials .swiper-slide {min-width:100%; max-width:100%}
+    .land-april25-block-material {margin:0; padding:10px 10px 40px 10px}
+    .land-april25-block-material-title {font-size:18px; text-align:center}
+    .land-april25-block-material-preview {display:none}
+    .land-april25-block-material-preview-mobile {display:block; margin:10px 24px 0 24px; position:relative}
+    .land-april25-block-material-preview-mobile img {display:block; width:100%; border-radius:5px}
+    .land-april25-block-material-preview-mobile svg {position:absolute; left:50%; top:50%; width:60px; height:60px; margin:-30px 0 0 -30px; fill:#FFFFFF}
+    .land-april25-block-material-btn {margin:10px 24px 0 24px}
+    .land-april25-block-materials .swiper-button-prev,
+    .land-april25-block-materials .swiper-button-next {position:absolute; display:block; z-index:2; top:50%; width:24px; height:24px; border:none; border-radius:0; margin:-12px 0 0 0; padding:0; outline:none; -webkit-appearance:none; cursor:pointer; background:none; transform:none; opacity:1}
+    .land-april25-block-materials .swiper-button-prev::after,
+    .land-april25-block-materials .swiper-button-next::after {display:none}
+    .land-april25-block-materials .swiper-button-prev {left:0}
+    .land-april25-block-materials .swiper-button-next {right:0}
+    .land-april25-block-materials .swiper-button-prev svg,
+    .land-april25-block-materials .swiper-button-next svg {display:block; width:24px; height:24px}
+    .land-april25-block-hotpoint .land-april25-block-materials .swiper-button-prev svg,
+    .land-april25-block-hotpoint .land-april25-block-materials .swiper-button-next svg {fill:#000000}
+    .land-april25-block-beko .land-april25-block-materials .swiper-button-prev svg,
+    .land-april25-block-beko .land-april25-block-materials .swiper-button-next svg {fill:#007CBA}
+    .land-april25-block-indesit .land-april25-block-materials .swiper-button-prev svg,
+    .land-april25-block-indesit .land-april25-block-materials .swiper-button-next svg {fill:#0091D0}
+    .land-april25-block-grundig .land-april25-block-materials .swiper-button-prev svg,
+    .land-april25-block-grundig .land-april25-block-materials .swiper-button-next svg {fill:#BB442A}
+    .land-april25-block-materials .swiper-pagination.swiper-pagination-horizontal {display:flex; position:absolute; margin:0; width:auto; left:0; top:auto; right:0; bottom:15px; align-items:center; justify-content:center}
+    .land-april25-block-materials .swiper-pagination.swiper-pagination-horizontal .swiper-pagination-bullet {display:block; min-width:5px; max-width:5px; height:5px; background:#D9D9D9; opacity:1; margin:0 0 0 30px; border-radius:50%; cursor:pointer; position:relative; transition:min-width 0.2s, max-width 0.2s, height 0.2s, background 0.2s}
+    .land-april25-block-materials .swiper-pagination.swiper-pagination-horizontal .swiper-pagination-bullet:first-child {margin:0}
+    .land-april25-block-materials .swiper-pagination.swiper-pagination-horizontal .swiper-pagination-bullet-active {min-width:10px; max-width:10px; height:10px; opacity:1}
+    .land-april25-block-hotpoint .land-april25-block-materials .swiper-pagination.swiper-pagination-horizontal .swiper-pagination-bullet-active {background:#000000}
+    .land-april25-block-beko .land-april25-block-materials .swiper-pagination.swiper-pagination-horizontal .swiper-pagination-bullet-active {background:#007CBA}
+    .land-april25-block-indesit .land-april25-block-materials .swiper-pagination.swiper-pagination-horizontal .swiper-pagination-bullet-active {background:#0091D0}
+    .land-april25-block-grundig .land-april25-block-materials .swiper-pagination.swiper-pagination-horizontal .swiper-pagination-bullet-active {background:#BB442A}
+    .land-april25-block-info {display:block; text-align:center; margin:20px 0 0 0; line-height:1.5em}
+    .land-april25-block-info svg {display:inline-block; vertical-align:middle; margin:-2px 10px 0 0}
+    .land-april25-block-materials .swiper-slide {display:flex; height:auto}
+    .land-april25-block-materials .swiper-slide.land-april25-block-materials-slide-landing {display:flex}
+    a.land-april25-block-landing,
+    .land-april25-block-landing {display:none; margin:0; padding:10px 10px 40px 10px}
+    .land-april25-block-materials .swiper-slide.land-april25-block-materials-slide-landing a.land-april25-block-landing,
+    .land-april25-block-materials .swiper-slide.land-april25-block-materials-slide-landing .land-april25-block-landing {display:block; background:#FFFFFF; border-radius:6px}
+    .land-april25-block-landing-icons {display:none}
+    .land-april25-block-landing-title {margin:0; font-size:18px; text-align:center}
+    .land-april25-block-landing-text {margin:5px 0 0 0; text-align:center}
+    .land-april25-block-landing-text br {display:none}
+    .land-april25-block-landing-preview {min-width:0; max-width:none; margin:10px 24px 0 24px; background-image:url(../img/land-april25-block-landing-preview-mobile.svg); padding-top:4.68vw}
+    a.land-april25-block-chatbot {margin:20px 0 0 0; padding:10px; height:auto; display:block; text-align:center}
+    .land-april25-block-chatbot-logo {margin:0 auto 10px auto}
+    .land-april25-block-social {margin:10px 0 0 0; display:block; height:auto; padding:10px; text-align:center}
+    .land-april25-block-social-links {margin:10px 0 0 0; justify-content:center}
+}
